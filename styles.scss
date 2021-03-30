@@ -29,7 +29,7 @@ body {
 
 }
 
-#input {
+#input_box {
     margin: 5px;
     width: 275px;
     height: 120px;
@@ -37,7 +37,27 @@ body {
     border-radius: 8px;
     background-color: inherit;
     border: 2px solid #ffff;
+    font-size: 40px;
+    text-align: right;
+    overflow: hidden;
 }
+
+#display-two {
+    align-items: 60px;
+    font-size: 50px;
+    padding-top: 20px;
+    padding-right: 15px;
+    overflow: hidden;
+}
+
+#display-one {
+    height: 20px;
+    opacity: 0.4;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-right: 15px;
+}
+
 
 #calculator_buttons_grid {
     display: grid;
@@ -79,7 +99,7 @@ button:active {
 
 }
 
-#input {
+#input_box {
     grid-area: "input";
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 18px;
