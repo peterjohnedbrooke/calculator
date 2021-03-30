@@ -1,0 +1,208 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#calculator {
+    justify-content: center;
+    align-items: center;
+    border: 2px transparent #ffff;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 5px;
+
+    background-image: linear-gradient(135deg, #81FFEF 10%, #F067B4 100%);
+    box-shadow: 0px 5px 10px 0px lightgrey;
+    height: 480px;
+    filter: invert(85%);
+    // transform: rotateY(45deg) rotateX(30deg) rotateZ(10deg);
+    // transform: translate3d(42px, -62px, -125px);
+    // transform: rotate3d(5, 40, 5, 60deg);
+    // transform-style: preserve-3d;
+    // transform-origin: center;
+
+}
+
+#input_box {
+    margin: 5px;
+    width: 275px;
+    height: 120px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: inherit;
+    border: 2px solid #ffff;
+    font-size: 40px;
+    text-align: right;
+    overflow: hidden;
+}
+
+#display-two {
+    align-items: 60px;
+    font-size: 50px;
+    padding-top: 20px;
+    padding-right: 15px;
+    overflow: hidden;
+}
+
+#display-one {
+    height: 20px;
+    opacity: 0.4;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-right: 15px;
+}
+
+
+#calculator_buttons_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "clear""percentage""delete""divide"
+        "seven""eight""nine""times"
+        "four""five""six""minus"
+        "one""two""three""plus"
+        "double""zero""decimal""equals";
+    gap: 5px;
+
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    background-color: #ffff;
+    border: transparent;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-decoration: none;
+    outline: none;
+    font-weight: bolder;
+    margin-left: 5px;
+    // border-radius: 8px;
+    background-color: inherit;
+    font-size: larger;
+}
+
+button:hover {
+    text-decoration: underline;
+}
+
+button:active {
+    border: 2px solid #ffff;
+    box-shadow: 0 5px #ffff;
+    transform: translateY(4px);
+    border-radius: 8px;
+
+}
+
+#input_box {
+    grid-area: "input";
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+}
+
+#clear {
+    grid-area: "clear";
+    color: lightgrey;
+    font-weight: bold;
+    color: rgb(52, 170, 123);
+}
+
+#percentage {
+    grid-area: "percentage";
+    color: rgb(52, 170, 123);
+}
+
+#delete {
+    grid-area: "delete";
+    color: rgb(52, 170, 123);
+}
+
+#divide {
+    grid-area: "divide";
+    color: rgb(230, 116, 133);
+}
+
+#seven {
+    grid-area: "seven";
+    background-color: inherit;
+}
+
+#eight {
+    grid-area: "eight";
+    background-color: inherit;
+}
+
+#nine {
+    grid-area: "nine";
+    background-color: inherit;
+}
+
+#times {
+    grid-area: "times";
+    color: rgb(230, 116, 133);
+}
+
+#four {
+    grid-area: "four";
+    background-color: inherit;
+}
+
+#five {
+    grid-area: "five";
+    background-color: inherit;
+}
+
+#six {
+    grid-area: "six";
+    background-color: inherit;
+}
+
+#minus {
+    grid-area: "minus";
+    color: rgb(230, 116, 133);
+}
+
+#one {
+    grid-area: "one";
+    background-color: inherit;
+}
+
+#two {
+    grid-area: "two";
+    background-color: inherit;
+}
+
+#three {
+    grid-area: "three";
+    background-color: inherit;
+}
+
+#plus {
+    grid-area: "plus";
+    color: rgb(230, 116, 133);
+}
+
+#double {
+    grid-area: "double";
+    background-color: inherit;
+}
+
+#zero {
+    grid-area: "zero";
+    background-color: inherit;
+}
+
+#decimal {
+    grid-area: "decimal";
+    background-color: inherit;
+}
+
+#equals {
+    grid-area: "equals";
+    color: rgb(230, 116, 133);
+}

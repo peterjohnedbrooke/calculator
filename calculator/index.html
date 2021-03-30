@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Source+Sans+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5ac7122634.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Calculator</title>
+  </head>
+
+  <body>
+    <div id="calculator">
+
+      <div id="input_box">
+        <div id="display-one">0</div>
+        <div id="display-two">0</div>
+      </div>
+
+      <div id="calculator_buttons_grid">
+        <button id="clear" class="button--clearall">C</button>
+        <button id="percentage" class="button--operator">
+          %
+          <!-- <i class="fas fa-percentage"></i> -->
+        </button>
+        <button id="delete" class="button--clearlast">
+          Del
+          <!-- <i class="fas fa-backspace"></i> -->
+        </button>
+        <button id="divide" class="button--operator" value="/">
+          /
+          <!-- <i class="fas fa-divide"></i> -->
+        </button>
+        <button id="seven" class="button--number">7</button>
+        <button id="eight" class="button--number">8</button>
+        <button id="nine" class="button--number">9</button>
+        <button id="times" class="button--operator" value="X">
+          X
+          <!-- <i class="fas fa-times"></i> -->
+        </button>
+        <button id="four" class="button--number">4</button>
+        <button id="five" class="button--number">5</button>
+        <button id="six" class="button--number">6</button>
+        <button id="minus" class="button--operator" value="-">
+          -
+          <!-- <i class="fas fa-minus"></i> -->
+        </button>
+        <button id="one" class="button--number">1</button>
+        <button id="two" class="button--number">2</button>
+        <button id="three" class="button--number">3</button>
+        <button id="plus" class="button--operator" value="+">
+          +
+          <!-- <i class="fas fa-plus"></i> -->
+        </button>
+        <button id="doublezero" class="button--number">00</button>
+        <button id="zero" class="button--number">0</button>
+        <button id="decimal" class="button--decimal">.</button>
+        <button id="equals" class="button--equals" value="=">
+          =
+          <!-- <i class="fas fa-equals"></i> -->
+        </button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

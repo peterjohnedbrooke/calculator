@@ -1,0 +1,23 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.dev.js",
+  "scripts": {
+    "e2e" : "cypress open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peteredbrooke/calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peteredbrooke/calculator/issues"
+  },
+  "homepage": "https://github.com/peteredbrooke/calculator#readme",
+  "devDependencies": {
+    "cypress": "^6.5.0"
+  }
+}
